@@ -14,11 +14,22 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@headlessui/react": "^1.1.0",
+    "@heroicons/react": "^1.0.1",
+    "autoprefixer": "^10.2.5",
     "gatsby": "^3.3.1",
+    "gatsby-plugin-i18n": "^1.0.1",
+    "gatsby-plugin-postcss": "^4.3.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
+    "i18next": "^20.2.4",
+    "postcss": "^8.2.6",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "tailwindcss": "^2.1.2",
+    "typeface-roboto": "^1.1.13"
   },
   "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.6",
     "prettier": "2.2.1"
   },
   "repository": {
