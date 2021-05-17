@@ -199,6 +199,10 @@ export default function Home() {
                 <div className="rounded-md shadow">
                   <a
                     href="#"
+                    onClick={event => {
+                      event.preventDefault()
+                      scrollTo("#inscripcions")
+                    }}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#bbc82a] hover:bg-[#675c2a] md:py-4 md:text-lg md:px-10"
                   >
                     Inscriure'm
@@ -207,6 +211,10 @@ export default function Home() {
                 <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                   <a
                     href="#"
+                    onClick={event => {
+                      event.preventDefault()
+                      scrollTo("#faqs")
+                    }}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#bbc82a] bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                   >
                     Més informació
@@ -305,6 +313,23 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-8" id="inscripcions">
+        <div className="relative px-4 sm:px-6 lg:px-8">
+          <div className="text-lg max-w-prose mx-auto mb-4">
+            <h1>
+              <span className="block text-base text-center text-[#bbc82a] font-semibold tracking-wide uppercase">
+                Formulari d'inscripció
+              </span>
+              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-gray-900 sm:text-4xl">
+                Inscripcions
+              </span>
+            </h1>
+            <p className="mt-8 text-xl text-gray-500 leading-8"></p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-8" id="faqs">
         <Faqs faqs={faqs} />
       </section>
