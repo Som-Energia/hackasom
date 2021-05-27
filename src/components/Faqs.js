@@ -17,7 +17,7 @@ export default function Faqs({ faqs }) {
               FAQS
             </span>
             <span className="mt-2 block tracking-wide">
-              Preguntes freqüents
+              Preguntas frecuentes
             </span>
           </h2>
           <dl className="mt-6 space-y-6 divide-y divide-gray-200">
@@ -27,7 +27,7 @@ export default function Faqs({ faqs }) {
                   <>
                     <dt className="text-lg">
                       <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                        <span className="font-medium text-som-black">
+                        <span className="font-montserrat font-medium text-som-black">
                           {faq.question}
                         </span>
                         <span className="ml-6 h-7 flex items-center">

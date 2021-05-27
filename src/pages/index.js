@@ -193,7 +193,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Del 18 de setembre al 16 d'octubre
+                Del 18 de septiembre al 16 de octubre
               </p>
               <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                 <div className="rounded-md shadow">
@@ -205,7 +205,7 @@ export default function Home() {
                     }}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-som-green hover:bg-som-black md:py-4 md:text-lg md:px-10"
                   >
-                    Inscriure'm
+                    Inscribirme
                   </a>
                 </div>
                 <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
@@ -217,7 +217,7 @@ export default function Home() {
                     }}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-som-green bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                   >
-                    Més informació
+                    Más información
                   </a>
                 </div>
               </div>
@@ -254,10 +254,10 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
-                Dates clau
+                Fechas clave
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                Calendari
+                Calendario
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8"></p>
@@ -270,10 +270,10 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
-                Que farem?
+                ¿Qué haremos?
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                La dinàmica
+                La dinámica
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
@@ -303,10 +303,10 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
-                Propostes
+                Propuestas
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                La temàtica
+                La temática
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
@@ -325,10 +325,10 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
-                Formulari d'inscripció
+                Formulario de inscripción
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                Inscripcions
+                Inscripciones
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8"></p>

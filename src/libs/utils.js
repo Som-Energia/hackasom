@@ -3,10 +3,10 @@ import React from "react"
 export const navigation = {
   main: [
     { name: "HackaSom", href: "hackasom" },
-    { name: "Calendari", href: "calendar" },
-    { name: "Dinàmica", href: "dinamica" },
-    { name: "Temàticas", href: "tematica" },
-    { name: "Inscripcions", href: "inscripcions" },
+    { name: "Calendario", href: "calendar" },
+    { name: "Dinámica", href: "dinamica" },
+    { name: "Temáticas", href: "tematica" },
+    { name: "Inscripciones", href: "inscripcions" },
     { name: "FAQS", href: "faqs" },
   ],
   social: [
@@ -63,27 +63,62 @@ export const navigation = {
 
 export const faqs = [
   {
-    question: "Quan es fa?",
+    question: "¿Cuándo se hace?",
+    answer:
+      "El HackaSom se celebrará en el periodo del 18 de septiembre al 16 de octubre.",
+  },
+  {
+    question: "¿Dónde se hace?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
-    question: "On es fa?",
+    question: "¿Qué se hará en la plenaria de arranque?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
-    question: "Quin és l'objectiu?",
+    question: "¿Qué se hará en la plenaria intermedia?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
-    question: "Puc venir amb el meu equip?",
+    question: "¿Qué se hará en la plenaria de cierre?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
-    question: "Què passa si no tinc equip?",
+    question: "¿Cuál es el objetivo?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "¿Tendremos soporte desde el ET de SomEnergia?",
+    answer:
+      "El equipo técnico estará en las reuniones plenarias y tendrán reservadas X horas a la semana para consultas y peticiones de recursos.",
+  },
+  {
+    question: "¿Qué recursos se pueden pedir al ET?",
+    answer:
+      "Listas de correo, servidores virtuales, dominios o espacios para repositorios. Logos y diseños corporativos de SomEnergia. APIs ya disponibles. Repositorios públicos.",
+  },
+  {
+    question: "¿Y si necesito una API no disponible?",
+    answer:
+      "Es improbable que podamos desarrollarla mientras dure el HackaSom. Usad uno de los varios emuladores libres disponibles. Podrá servir de especificación de partida si se decide implementarla.",
+  },
+  {
+    question: "¿Necesito saber de tecnología para participar?",
+    answer:
+      "No. No es necesario. Aunque no sepas de tecnología, puedes aportar mucho. Desde la idea inicial hasta la definición concreta del proyecto, información o experiencia que tengas sobre el ámbito del proyecto, contrastar lo que se va haciendo, cómo se comunican los resultados...",
+  },
+  {
+    question: "¿Puedo venir con mi equipo?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "¿Y si no tengo equipo?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
