@@ -33,8 +33,8 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-500">
-          &copy; Som Energia {new Date().getFullYear()} | Made with 💚 and open
-          source
+          &copy; Som Energia {new Date().getFullYear()} | Made with{" "}
+          <span className="text-lg text-som-green">💚</span> and open source
         </p>
       </div>
     </footer>

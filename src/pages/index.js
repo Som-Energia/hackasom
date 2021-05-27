@@ -226,7 +226,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="py-12" id="hackasom">
+      <section className="py-16" id="hackasom">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto">
             <h1>
@@ -247,7 +247,7 @@ export default function Home() {
       </section>
 
       <section
-        className="py-12 bg-gradient-to-r from-som-yellow to-som-green"
+        className="py-16 bg-gradient-to-r from-som-yellow to-som-green"
         id="calendar"
       >
         <div className="relative px-4 sm:px-6 lg:px-8">
@@ -265,7 +265,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12" id="dinamica">
+      <section className="py-16" id="dinamica">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h1>
@@ -296,7 +296,7 @@ export default function Home() {
       </section>
 
       <section
-        className="py-12 bg-gradient-to-r from-som-yellow to-som-green"
+        className="py-16 bg-gradient-to-r from-som-yellow to-som-green"
         id="tematica"
       >
         <div className="relative px-4 sm:px-6 lg:px-8">
@@ -320,7 +320,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12" id="inscripcions">
+      <section className="py-16" id="inscripcions">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h1>
@@ -336,7 +336,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12" id="faqs">
+      <section className="py-16" id="faqs">
         <Faqs faqs={faqs} />
       </section>
     </Layout>
