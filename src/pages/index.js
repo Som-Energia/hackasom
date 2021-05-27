@@ -186,7 +186,7 @@ export default function Home() {
 
           <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
             <div className="text-center">
-              <h1 className="text-4xl tracking-wide font-extrabold text-som-black sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl tracking-wide font-bold text-som-black sm:text-5xl md:text-6xl font-montserrat">
                 <span className="block xl:inline">Som Energia</span>{" "}
                 <span className="block text-som-green xl:inline">
                   HackaSom 2021
@@ -229,14 +229,14 @@ export default function Home() {
       <section className="py-16" id="hackasom">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto">
-            <h1>
+            <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
                 HackaSom
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
                 ¿Qué es el HackaSom?
               </span>
-            </h1>
+            </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
               Un evento virtual en el que proponemos a personas cercanas a Som
               Energia a colaborar entre ellas a lo largo de 3 semanas en
@@ -252,14 +252,14 @@ export default function Home() {
       >
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
-            <h1>
+            <h2 className="font-montserrat">
               <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
                 Dates clau
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
                 Calendari
               </span>
-            </h1>
+            </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8"></p>
           </div>
         </div>
@@ -268,14 +268,14 @@ export default function Home() {
       <section className="py-16" id="dinamica">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
-            <h1>
+            <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
                 Que farem?
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
                 La dinàmica
               </span>
-            </h1>
+            </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
               Durante el kickoff se formarán equipos de entre 3 y 5 personas por
               proyecto, en el cual estarán trabajando online durante 3 semanas.
@@ -301,14 +301,14 @@ export default function Home() {
       >
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
-            <h1>
+            <h2 className="font-montserrat">
               <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
                 Propostes
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
                 La temàtica
               </span>
-            </h1>
+            </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
               La temática este año está abierta. En el momento de la inscripción
               podréis votar entre diferentes temáticas o proponer otras.
@@ -323,14 +323,14 @@ export default function Home() {
       <section className="py-16" id="inscripcions">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
-            <h1>
+            <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
                 Formulari d'inscripció
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
                 Inscripcions
               </span>
-            </h1>
+            </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8"></p>
           </div>
         </div>

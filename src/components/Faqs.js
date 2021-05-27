@@ -12,7 +12,7 @@ export default function Faqs({ faqs }) {
     <div className="">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-          <h2 className="text-center text-3xl font-extrabold text-som-black sm:text-4xl">
+          <h2 className="text-center text-3xl font-bold text-som-black sm:text-4xl font-montserrat">
             <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
               FAQS
             </span>

@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ["roboto", "sans-serif"],
+        montserrat: ["montserrat", "sans-serif"],
       },
       colors: {
         "som-green": "#97D700",
