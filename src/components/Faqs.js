@@ -12,8 +12,8 @@ export default function Faqs({ faqs }) {
     <div className="">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-          <h2 className="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            <span className="block text-base text-center text-[#bbc82a] font-semibold tracking-wide uppercase">
+          <h2 className="text-center text-3xl font-extrabold text-som-black sm:text-4xl">
+            <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
               FAQS
             </span>
             <span className="mt-2 block tracking-wide">
@@ -27,7 +27,7 @@ export default function Faqs({ faqs }) {
                   <>
                     <dt className="text-lg">
                       <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                        <span className="font-medium text-gray-900">
+                        <span className="font-medium text-som-black">
                           {faq.question}
                         </span>
                         <span className="ml-6 h-7 flex items-center">

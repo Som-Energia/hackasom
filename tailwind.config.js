@@ -10,6 +10,9 @@ module.exports = {
         roboto: ["roboto", "sans-serif"],
       },
       colors: {
+        "som-green": "#97D700",
+        "som-yellow": "#E0E722",
+        "som-black": "#4D4D4D",
         lime: colors.lime,
       },
     },

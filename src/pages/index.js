@@ -122,7 +122,7 @@ export default function Home() {
                             event.preventDefault()
                             scrollTo(`#${item.href}`)
                           }}
-                          className="font-medium text-gray-600 hover:text-gray-900"
+                          className="font-medium text-gray-600 hover:text-som-black"
                         >
                           {item.name}
                         </a>
@@ -171,7 +171,7 @@ export default function Home() {
                               event.preventDefault()
                               scrollTo(`#${item.href}`)
                             }}
-                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-som-black hover:bg-gray-50"
                           >
                             {item.name}
                           </a>
@@ -186,9 +186,9 @@ export default function Home() {
 
           <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
             <div className="text-center">
-              <h1 className="text-4xl tracking-wide font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl tracking-wide font-extrabold text-som-black sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Som Energia</span>{" "}
-                <span className="block text-[#bbc82a] xl:inline">
+                <span className="block text-som-green xl:inline">
                   HackaSom 2021
                 </span>
               </h1>
@@ -203,7 +203,7 @@ export default function Home() {
                       event.preventDefault()
                       scrollTo("#inscripcions")
                     }}
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#bbc82a] hover:bg-[#675c2a] md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-som-green hover:bg-som-black md:py-4 md:text-lg md:px-10"
                   >
                     Inscriure'm
                   </a>
@@ -215,7 +215,7 @@ export default function Home() {
                       event.preventDefault()
                       scrollTo("#faqs")
                     }}
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#bbc82a] bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-som-green bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                   >
                     Més informació
                   </a>
@@ -226,14 +226,14 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="py-8" id="hackasom">
+      <section className="py-12" id="hackasom">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto">
             <h1>
-              <span className="block text-base text-center text-[#bbc82a] font-semibold tracking-wide uppercase">
+              <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
                 HackaSom
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-gray-900 sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
                 ¿Qué es el HackaSom?
               </span>
             </h1>
@@ -246,14 +246,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-8" id="calendar">
+      <section
+        className="py-12 bg-gradient-to-r from-som-yellow to-som-green"
+        id="calendar"
+      >
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h1>
-              <span className="block text-base text-center text-[#bbc82a] font-semibold tracking-wide uppercase">
+              <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
                 Dates clau
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-gray-900 sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
                 Calendari
               </span>
             </h1>
@@ -262,14 +265,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-8" id="dinamica">
+      <section className="py-12" id="dinamica">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h1>
-              <span className="block text-base text-center text-[#bbc82a] font-semibold tracking-wide uppercase">
+              <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
                 Que farem?
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-gray-900 sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
                 La dinàmica
               </span>
             </h1>
@@ -292,14 +295,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-8" id="tematica">
+      <section
+        className="py-12 bg-gradient-to-r from-som-yellow to-som-green"
+        id="tematica"
+      >
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h1>
-              <span className="block text-base text-center text-[#bbc82a] font-semibold tracking-wide uppercase">
+              <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
                 Propostes
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-gray-900 sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
                 La temàtica
               </span>
             </h1>
@@ -314,14 +320,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-8" id="inscripcions">
+      <section className="py-12" id="inscripcions">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h1>
-              <span className="block text-base text-center text-[#bbc82a] font-semibold tracking-wide uppercase">
+              <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
                 Formulari d'inscripció
               </span>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-gray-900 sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-wide text-som-black sm:text-4xl">
                 Inscripcions
               </span>
             </h1>
@@ -330,7 +336,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-8" id="faqs">
+      <section className="py-12" id="faqs">
         <Faqs faqs={faqs} />
       </section>
     </Layout>

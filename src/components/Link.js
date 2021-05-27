@@ -2,7 +2,7 @@ import React from "react"
 
 const Link = ({ href, children }) => {
   return (
-    <a className="text-[#bbc82a] hover:text-black" href={href}>
+    <a className="text-som-green hover:text-som-black" href={href}>
       {children}
     </a>
   )
