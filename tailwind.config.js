@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         "som-green": "#97D700",
+        "som-dark-green": "#74a938",
         "som-yellow": "#E0E722",
         "som-black": "#4D4D4D",
         lime: colors.lime,
