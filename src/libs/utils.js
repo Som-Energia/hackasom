@@ -1,6 +1,6 @@
 import React from "react"
 import {
-  DocumentTextIcon,
+  PencilAltIcon,
   UserGroupIcon,
   FlagIcon,
   PresentationChartLineIcon,
@@ -72,7 +72,7 @@ export const calendar = [
     content: "Inscripciones",
     href: "#",
     date: "1-15 de septiembre",
-    icon: DocumentTextIcon,
+    icon: PencilAltIcon,
   },
   {
     content: "Arranque",
