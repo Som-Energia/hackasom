@@ -1,4 +1,10 @@
 import React from "react"
+import {
+  DocumentTextIcon,
+  UserGroupIcon,
+  FlagIcon,
+  PresentationChartLineIcon,
+} from "@heroicons/react/outline"
 
 export const navigation = {
   main: [
@@ -60,6 +66,33 @@ export const navigation = {
     },
   ],
 }
+
+export const calendar = [
+  {
+    content: "Inscripciones",
+    href: "#",
+    date: "1-15 de septiembre",
+    icon: DocumentTextIcon,
+  },
+  {
+    content: "Arranque",
+    href: "#",
+    date: "18 de septiembre",
+    icon: FlagIcon,
+  },
+  {
+    content: "Puesta en común intermedia",
+    href: "#",
+    date: "2 de octubre",
+    icon: UserGroupIcon,
+  },
+  {
+    content: "Presentación final",
+    href: "#",
+    date: "16 de octubre",
+    icon: PresentationChartLineIcon,
+  },
+]
 
 export const faqs = [
   {

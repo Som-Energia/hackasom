@@ -9,6 +9,9 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 import { navigation, faqs } from "libs/utils"
 import Faqs from "../components/Faqs"
 import Link from "../components/Link"
+import Calendar from "../components/Calendar"
+
+import { calendar } from "../libs/utils"
 
 export default function Home() {
   return (
@@ -247,11 +250,11 @@ export default function Home() {
       </section>
 
       <section
-        className="py-16 bg-gradient-to-r from-som-yellow to-som-green"
+        className="py-16 bg-gradient-to-r from-som-yellow to-som-dark-green"
         id="calendar"
       >
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="text-lg max-w-prose mx-auto mb-4">
+          <div className="text-lg max-w-7xl mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
                 Fechas clave
@@ -260,7 +263,7 @@ export default function Home() {
                 Calendario
               </span>
             </h2>
-            <p className="mt-8 text-xl text-gray-500 leading-8"></p>
+            <Calendar items={calendar} />
           </div>
         </div>
       </section>
@@ -296,7 +299,7 @@ export default function Home() {
       </section>
 
       <section
-        className="py-16 bg-gradient-to-r from-som-yellow to-som-green"
+        className="py-16 bg-gradient-to-r from-som-yellow to-som-dark-green"
         id="tematica"
       >
         <div className="relative px-4 sm:px-6 lg:px-8">
@@ -314,7 +317,11 @@ export default function Home() {
               podréis votar entre diferentes temáticas o proponer otras.
             </p>
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              Más detalles en el <Link href="#faqs">FAQ’s</Link>.
+              Más detalles en el{" "}
+              <Link className="text-black hover:text-white" href="#faqs">
+                FAQ’s
+              </Link>
+              .
             </p>
           </div>
         </div>
