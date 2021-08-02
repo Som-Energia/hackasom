@@ -122,6 +122,7 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
+                    <div className="md:flex-grow"></div>
                     <div className="hidden md:flex md:space-x-10">
                       {navigation.main.map(item => (
                         <a
@@ -136,6 +137,9 @@ export default function Home() {
                           { t(item.name) }
                         </a>
                       ))}
+                    </div>
+                    <div className="md:flex-grow"></div>
+                    <div className="hidden md:flex">
                       <LanguageSelector />
                     </div>
                   </nav>
