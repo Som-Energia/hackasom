@@ -333,13 +333,15 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
-                Formulario de inscripción
+              { t("REGISTRATION_TITLE") }
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                Inscripciones
+              { t("REGISTRATION_SUBTITLE") }
               </span>
             </h2>
-            <p className="mt-8 text-xl text-gray-500 leading-8"></p>
+            <p className="mt-8 text-xl text-gray-500 leading-8">
+              { t("REGISTRATION_CONTENT_NOT_YET") }
+            </p>
           </div>
         </div>
       </section>
