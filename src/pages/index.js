@@ -190,10 +190,11 @@ export default function Home() {
           <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
             <div className="text-center">
               <h1 className="text-4xl tracking-wide font-bold text-som-black sm:text-5xl md:text-6xl font-montserrat">
-                <span className="block xl:inline">Som Energia</span>{" "}
-                <span className="block text-som-green xl:inline">
-                  HackaSom 2021
-                </span>
+                <img
+                  style={ {margin:"auto"} }
+                  src={"/logo-hackasom-2021.png"}
+                  alt="Som Energia HackaSom 2021"
+                />
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                 Del 18 de septiembre al 16 de octubre
