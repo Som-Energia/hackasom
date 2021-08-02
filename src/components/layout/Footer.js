@@ -1,7 +1,9 @@
 import React from "react"
 import { navigation } from "libs/utils"
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 
 export default function Footer() {
+  const { t } = useTranslation()
   return (
     <footer className="bg-white">
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
@@ -15,7 +17,7 @@ export default function Footer() {
                 href={item.href}
                 className="text-base font-medium text-gray-500 hover:text-som-black"
               >
-                {item.name}
+                { t(item.name) }
               </a>
             </div>
           ))}

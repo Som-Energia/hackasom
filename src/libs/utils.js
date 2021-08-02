@@ -6,14 +6,19 @@ import {
   PresentationChartLineIcon,
 } from "@heroicons/react/outline"
 
+// Dummy translation marker.
+// For those string is done in runtime in the template
+// but used here to mark it for the text extraction tool
+const t = (x) => x;
+
 export const navigation = {
   main: [
-    { name: "HackaSom", href: "hackasom" },
-    { name: "Calendario", href: "calendar" },
-    { name: "Dinámica", href: "dinamica" },
-    { name: "Temáticas", href: "tematica" },
-    { name: "Inscripciones", href: "inscripcions" },
-    { name: "FAQS", href: "faqs" },
+    { name: t("HACKASOM_MENU"), href: "hackasom" },
+    { name: t("CALENDAR_MENU"), href: "calendar" },
+    { name: t("DYNAMIC_MENU"), href: "dinamica" },
+    { name: t("TOPICS_MENU"), href: "tematica" },
+    { name: t("REGISTRATION_MENU"), href: "inscripcions" },
+    { name: t("FAQS_MENU"), href: "faqs" },
   ],
   social: [
     {
@@ -69,90 +74,48 @@ export const navigation = {
 
 export const calendar = [
   {
-    content: "Inscripciones",
+    content: t("CALENDAR_REGISTRATION"),
     href: "#",
-    date: "1-15 de septiembre",
+    date: t("CALENDAR_REGISTRATION_DATES"),
     icon: PencilAltIcon,
   },
   {
-    content: "Arranque",
+    content: t("CALENDAR_KICKOFF"),
     href: "#",
-    date: "18 de septiembre",
+    date: t("CALENDAR_KICKOFF_DATES"),
     icon: FlagIcon,
   },
   {
-    content: "Puesta en común intermedia",
+    content: t("CALENDAR_MIDTERM"),
     href: "#",
-    date: "2 de octubre",
+    date: t("CALENDAR_MIDTERM_DATES"),
     icon: UserGroupIcon,
   },
   {
-    content: "Presentación final",
+    content: t("CALENDAR_CLOSING"),
     href: "#",
-    date: "16 de octubre",
+    date: t("CALENDAR_CLOSING_DATES"),
     icon: PresentationChartLineIcon,
   },
 ]
 
 export const faqs = [
-  {
-    question: "¿Cuándo se hace?",
-    answer:
-      "El HackaSom se celebrará en el periodo del 18 de septiembre al 16 de octubre.",
-  },
-  {
-    question: "¿Dónde se hace?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "¿Qué se hará en la plenaria de arranque?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "¿Qué se hará en la plenaria intermedia?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "¿Qué se hará en la plenaria de cierre?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "¿Cuál es el objetivo?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "¿Tendremos soporte desde el ET de SomEnergia?",
-    answer:
-      "El equipo técnico estará en las reuniones plenarias y tendrán reservadas X horas a la semana para consultas y peticiones de recursos.",
-  },
-  {
-    question: "¿Qué recursos se pueden pedir al ET?",
-    answer:
-      "Listas de correo, servidores virtuales, dominios o espacios para repositorios. Logos y diseños corporativos de SomEnergia. APIs ya disponibles. Repositorios públicos.",
-  },
-  {
-    question: "¿Y si necesito una API no disponible?",
-    answer:
-      "Es improbable que podamos desarrollarla mientras dure el HackaSom. Usad uno de los varios emuladores libres disponibles. Podrá servir de especificación de partida si se decide implementarla.",
-  },
-  {
-    question: "¿Necesito saber de tecnología para participar?",
-    answer:
-      "No. No es necesario. Aunque no sepas de tecnología, puedes aportar mucho. Desde la idea inicial hasta la definición concreta del proyecto, información o experiencia que tengas sobre el ámbito del proyecto, contrastar lo que se va haciendo, cómo se comunican los resultados...",
-  },
-  {
-    question: "¿Puedo venir con mi equipo?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "¿Y si no tengo equipo?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-]
+  "WHEN_AND_WHERE",
+  "WHAT",
+  "TOPICS",
+  "WHY",
+  "KICKOFF_SESSION",
+  "MIDTERM_SESSION",
+  "CLOSING_SESSION",
+  "TECH_BACKGROUND",
+  "TEAMS",
+  "SINGLES",
+  "SUPPORT",
+  "RESOURCES",
+].map( (item) => {
+  return {
+    question: `Q_${item}`,
+    answer: `A_${item}`,
+  }
+});
+

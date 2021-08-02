@@ -1,6 +1,8 @@
 import React from "react"
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 
 const Calendar = props => {
+  const { t } = useTranslation()
   const { items } = props
   return (
     <dl className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-4">
@@ -24,12 +26,12 @@ const Calendar = props => {
                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-            {item.date}
+            { t(item.date) }
           </div>
           <div className="flex flex-col justify-between">
             <div className="mt-4">
               <p className="text-center text-2xl font-semibold text-som-black font-montserrat">
-                {item.content}
+                { t(item.content) }
               </p>
             </div>
             <div className="text-gray-400 flex justify-center mt-4">

@@ -1,6 +1,9 @@
 import React, { Fragment } from "react"
 import Layout from "components/layout/Layout"
 
+import { useTranslation } from 'gatsby-plugin-react-i18next'
+import { graphql } from 'gatsby';
+
 import { Popover, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 
@@ -10,10 +13,13 @@ import { navigation, faqs } from "libs/utils"
 import Faqs from "../components/Faqs"
 import Link from "../components/Link"
 import Calendar from "../components/Calendar"
-
 import { calendar } from "../libs/utils"
 
+import LanguageSelector from "../components/LanguageSelector"
+
 export default function Home() {
+  const { t } = useTranslation()
+
   return (
     <Layout>
       <div className="relative bg-white overflow-hidden">
@@ -119,7 +125,7 @@ export default function Home() {
                     <div className="hidden md:flex md:space-x-10">
                       {navigation.main.map(item => (
                         <a
-                          key={item.name}
+                          key={ item.name }
                           href="#"
                           onClick={event => {
                             event.preventDefault()
@@ -127,9 +133,10 @@ export default function Home() {
                           }}
                           className="font-medium text-gray-600 hover:text-som-black"
                         >
-                          {item.name}
+                          { t(item.name) }
                         </a>
                       ))}
+                      <LanguageSelector />
                     </div>
                   </nav>
                 </div>
@@ -168,7 +175,7 @@ export default function Home() {
                       <div className="px-2 pt-2 pb-3">
                         {navigation.main.map(item => (
                           <a
-                            key={item.name}
+                            key={ item.name }
                             href="#"
                             onClick={event => {
                               event.preventDefault()
@@ -176,9 +183,10 @@ export default function Home() {
                             }}
                             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-som-black hover:bg-gray-50"
                           >
-                            {item.name}
+                            { t(item.name) }
                           </a>
                         ))}
+                        <LanguageSelector />
                       </div>
                     </div>
                   </Popover.Panel>
@@ -193,11 +201,12 @@ export default function Home() {
                 <img
                   style={ {margin:"auto"} }
                   src={"/logo-hackasom-2021.png"}
-                  alt="Som Energia HackaSom 2021"
+                  alt={t("PAGE_TITLE")}
+                  title={t("PAGE_TITLE")}
                 />
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Del 18 de septiembre al 16 de octubre
+                { t("EVENT_DATES") }
               </p>
               <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                 <div className="rounded-md shadow">
@@ -209,7 +218,7 @@ export default function Home() {
                     }}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-som-green hover:bg-som-black md:py-4 md:text-lg md:px-10"
                   >
-                    Inscribirme
+                    { t("REGISTER_BUTTON") }
                   </a>
                 </div>
                 <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
@@ -221,7 +230,7 @@ export default function Home() {
                     }}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-som-green bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                   >
-                    Más información
+                    { t("MORE_INFO_BUTTON") }
                   </a>
                 </div>
               </div>
@@ -235,16 +244,14 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
-                HackaSom
+              { t("HACKASOM_TITLE") }
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                ¿Qué es el HackaSom?
+              { t("HACKASOM_SUBTITLE") }
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              Un evento virtual en el que proponemos a personas cercanas a Som
-              Energia a colaborar entre ellas a lo largo de 3 semanas en
-              proyectos multidisciplinares relacionados con Som Energia.
+              { t("HACKASOM_CONTENT") }
             </p>
           </div>
         </div>
@@ -258,10 +265,10 @@ export default function Home() {
           <div className="text-lg max-w-7xl mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
-                Fechas clave
+                { t("CALENDAR_TITLE") }
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                Calendario
+                { t("CALENDAR_SUBTITLE") }
               </span>
             </h2>
             <Calendar items={calendar} />
@@ -274,26 +281,23 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
-                ¿Qué haremos?
+                { t("DYNAMIC_TITLE") }
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                La dinámica
+                { t("DYNAMIC_SUBTITLE") }
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              Durante el kickoff se formarán equipos de entre 3 y 5 personas por
-              proyecto, en el cual estarán trabajando online durante 3 semanas.
+              { t("DYNAMIC_CONTENT_1") }
             </p>
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              A mitad del HackaSom habrá una puesta en común de los equipos. Y
-              al final cada equipo presentará los frutos de su proyecto.
+              { t("DYNAMIC_CONTENT_2") }
             </p>
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              Durante el HackaSom tendrás a tu disposición mentoría por parte
-              del equipo de IT del ET que te dará apoyo para lo que necesites.
+              { t("DYNAMIC_CONTENT_3") }
             </p>
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              Más detalles en el <Link href="#faqs">FAQ’s</Link>.
+              { t("DYNAMIC_CONTENT_4") }
             </p>
           </div>
         </div>
@@ -307,22 +311,14 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
-                Propuestas
+                { t("TOPICS_TITLE") }
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                La temática
+                { t("TOPICS_SUBTITLE") }
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              La temática este año está abierta. En el momento de la inscripción
-              podréis votar entre diferentes temáticas o proponer otras.
-            </p>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
-              Más detalles en el{" "}
-              <Link className="text-black hover:text-white" href="#faqs">
-                FAQ’s
-              </Link>
-              .
+              { t("TOPICS_CONTENT") }
             </p>
           </div>
         </div>
@@ -350,3 +346,17 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+query($language: String!) {
+  locales: allLocale(filter: {ns: {in: ["index"]}, language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  }
+}
+`;
