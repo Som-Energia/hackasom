@@ -3,10 +3,10 @@ import Layout from "components/layout/Layout"
 
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import { graphql } from 'gatsby';
-
 import { Popover, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 
+import ReactMarkdown from 'react-markdown'
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 import { navigation, faqs } from "libs/utils"
@@ -255,7 +255,9 @@ export default function Home() {
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
+	      <ReactMarkdown>
               { t("HACKASOM_CONTENT") }
+	      </ReactMarkdown>
             </p>
           </div>
         </div>
@@ -292,16 +294,24 @@ export default function Home() {
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
+	      <ReactMarkdown>
               { t("DYNAMIC_CONTENT_1") }
+	      </ReactMarkdown>
             </p>
             <p className="mt-8 text-xl text-gray-500 leading-8">
+	      <ReactMarkdown>
               { t("DYNAMIC_CONTENT_2") }
+	      </ReactMarkdown>
             </p>
             <p className="mt-8 text-xl text-gray-500 leading-8">
+	      <ReactMarkdown>
               { t("DYNAMIC_CONTENT_3") }
+	      </ReactMarkdown>
             </p>
             <p className="mt-8 text-xl text-gray-500 leading-8">
+	      <ReactMarkdown>
               { t("DYNAMIC_CONTENT_4") }
+	      </ReactMarkdown>
             </p>
           </div>
         </div>
@@ -322,7 +332,9 @@ export default function Home() {
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
+	      <ReactMarkdown>
               { t("TOPICS_CONTENT") }
+	      </ReactMarkdown>
             </p>
           </div>
         </div>
@@ -340,7 +352,9 @@ export default function Home() {
               </span>
             </h2>
             <p className="mt-8 text-xl text-gray-500 leading-8">
+	      <ReactMarkdown>
               { t("REGISTRATION_CONTENT_NOT_YET") }
+	      </ReactMarkdown>
             </p>
           </div>
         </div>

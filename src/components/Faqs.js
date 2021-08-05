@@ -3,6 +3,7 @@ import React from "react"
 import { Disclosure } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/outline"
 import { useTranslation } from 'gatsby-plugin-react-i18next'
+import ReactMarkdown from 'react-markdown'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -31,7 +32,9 @@ export default function Faqs({ faqs }) {
                     <dt className="text-lg">
                       <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
                         <span className="font-montserrat font-medium text-som-black">
+                          <ReactMarkdown>
                           { t(faq.question) }
+                          </ReactMarkdown>
                         </span>
                         <span className="ml-6 h-7 flex items-center">
                           <ChevronDownIcon
@@ -45,7 +48,11 @@ export default function Faqs({ faqs }) {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base text-gray-500">{ t(faq.answer) }</p>
+                      <p className="text-base text-gray-500">
+                        <ReactMarkdown>
+                        { t(faq.answer) }
+                        </ReactMarkdown>
+                      </p>
                     </Disclosure.Panel>
                   </>
                 )}

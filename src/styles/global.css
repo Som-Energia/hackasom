@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ul {
+  padding-left: 22pt;
+  list-style: revert;
+}
+a {
+ color: green;
+ /*color: var(--somgreen);*/
+}
