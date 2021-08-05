@@ -3,11 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
-ul {
+/* TODO: turn this into a tailwind way */
+
+.markdown ul {
   padding-left: 22pt;
   list-style: revert;
 }
-a {
- color: green;
- /*color: var(--somgreen);*/
+.markdown a {
+  padding: 4pt;
+  color: white;
+  background-color: #E0E722; /* var(--som-yellow); */
+  border-radius: 4pt;
+}
+.markdown a:hover {
+  color: black;
 }
