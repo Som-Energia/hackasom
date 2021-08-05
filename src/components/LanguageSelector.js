@@ -10,16 +10,20 @@ export default function LanguageSelector({siteTitle}) {
       <ul className="languages"> 
         { languages.map((lng) => (
           <li key={lng}
-            className={ language == lng ? "bg-som-green text-white shadow rounded" : "text-som-black bg-white hover:rounded hover:bg-som-yellow" }
+            className={ language === lng ? "bg-som-green text-white shadow rounded" : "text-som-black bg-white hover:rounded hover:bg-som-yellow" }
             style={{
               display: 'inline',
-              paddingLeft: '5pt',
-              paddingRight: '5pt',
-              fontWeight: language == lng ? "bold" : "regular",
-
             }}
           >
-            <Link to={originalPath} language={lng}>
+            <Link
+              to={originalPath}
+              language={lng}
+              style={{
+                paddingLeft: '5pt',
+                paddingRight: '5pt',
+                fontWeight: language === lng ? "bold" : "regular",
+              }}
+            >
               {lng}
             </Link>
           </li>
