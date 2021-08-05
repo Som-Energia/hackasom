@@ -26,7 +26,9 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`es`, `ca`, `gl`, `eu`],
+        languages: [
+          `es`, `ca`, //`gl`, `eu`
+        ],
         defaultLanguage: `es`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
         siteUrl: `https://example.com/`,
@@ -37,13 +39,14 @@ module.exports = {
           },
           keySeparator: false,
           nsSeparator: false,
-          debug: true, 
+          debug: false, 
           defaultNS: 'index',
+          nonExplicitSupportedLngs: true,
           // Copied from OpenData
-          //fallbackLng: 'es',
-          //detection: {
-          //  order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain']
-          //}
+          fallbackLng: 'es',
+          detection: {
+            order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain']
+          }
         },
         pages: [
           {
