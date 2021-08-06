@@ -9,12 +9,16 @@
   padding-left: 22pt;
   list-style: revert;
 }
+.markdown strong {
+  color: #74a938;
+  font-weight: normal;
+}
 .markdown a {
   padding: 4pt;
-  color: white;
-  background-color: #E0E722; /* var(--som-yellow); */
   border-radius: 4pt;
+  color: black;
 }
 .markdown a:hover {
   color: black;
+  background-color: #E0E722; /* var(--som-yellow); */
 }
