@@ -27,7 +27,7 @@ module.exports = {
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
         languages: [
-          `es`, `ca`, //`gl`, `eu`
+          `es`, `ca`, `eu`, //`gl`,
         ],
         defaultLanguage: `es`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
