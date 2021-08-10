@@ -17,7 +17,7 @@
     "DYNAMIC_MENU": "Dinamika",
     "DYNAMIC_SUBTITLE": "Dinamika",
     "DYNAMIC_CONTENT_3": "HackaSom ekitaldiak irauten duen bitartean, Som Energiako Talde Teknikoko IT lantaldeak aholku emango dizu eta behar duzun guztian lagunduko dizu.",
-    "DYNAMIC_CONTENT_4": "Xehetasun gehiago hemen: [FAQ's](#faqs).",
+    "DYNAMIC_CONTENT_4": "Xehetasun gehiago [ohiko galderetan](#faqs).",
     "TOPICS_MENU": "Gaiak",
     "TOPICS_TITLE": "Proposamenak",
     "TOPICS_SUBTITLE": "Gaia",
@@ -46,8 +46,8 @@
     "Q_SUPPORT": "Som Energiaren Talde Teknikoak **laguntza** emango digu?",
     "Q_RESOURCES": "Zer-nolako baliabideak eska daitezke?",
     "END": "Azken markatzailea",
-    "A_CLOSING_SESSION": "Itxiera-saioa **urriaren 16an, larunbatean,** izango da. Talde bakoitzak noraino iritsi den azalduko du eta jarraitzeko aukera planteatuko du.",
-    "A_TECH_BACKGROUND": "Ez. Ez da beharrezkoa. Teknologian aditua ez bazara ere, ekarpen baliotsua egin dezakezu: hasteko ideia bat, proiektuaren definizio zehatza, proiektuaren eremuaren inguruko informazioa edo esperientzia, egiten dena kontratatzea, emaitzak komunikatzeko modua....",
+    "A_CLOSING_SESSION": "Itxiera-saioa **urriaren 16an, larunbatean,** egingo da. Talde bakoitzak noraino iritsi den azaldu eta nola jarraitu dezakeen planteatuko du.",
+    "A_TECH_BACKGROUND": "Ez. Ez da beharrezkoa. Teknologian aditua ez bazara ere, ekarpen baliotsua egin dezakezu: hasteko ideia bat, proiektuaren definizio zehatza, proiektuaren eremuaren inguruko informazioa edo esperientzia, egiten dena kontrastatzea, emaitzak komunikatzeko modua....",
     "PAGE_TITLE": "HackaSom Som Energia 2021",
     "HACKASOM_CONTENT": "[Hackathon](https://eu.wikipedia.org/wiki/Hackathon) formatuko ekitaldi birtual bat da. Som Energiaren inguruko pertsonei zera proposatzen diegu: 3 astez elkarrekin lan egitea Kooperatibarekin zerikusia duten diziplina anitzeko hainbat proiektutan.",
     "CALENDAR_TITLE": "Data garrantzitsuak",
@@ -57,9 +57,9 @@
     "DYNAMIC_CONTENT_1": "Hasiera-saioan, proiektuko 3-5 pertsona bitarteko taldeak sortuko dira. Proiektuak 3 astez landuko dira, online.",
     "DYNAMIC_CONTENT_2": "HackaSom ekitaldiaren erdian taldeek bateratze-lana egingo dute eta, azken saioan, talde bakoitzak bere proiektuaren emaitzak aurkeztuko ditu.",
     "TOPICS_CONTENT": "Aurten hiru gai hauek aztertuko ditugu:\n\n- Energia-monitorizazioa eta -kontrola etxeko eremuan\n- Bazkideei laguntzeko tresnak\n- [Datu irekiak](https://opendata.somenergia.coop) bisualizatzea\n",
-    "A_WHEN_AND_WHERE": "HackaSom ekitaldia irailaren 18tik urriaren 16ra arte egingo da. Pandemiak eragin duen ziurgabetasuna dela eta, aurten formatu birtualean antolatu da. Taldeek nahi dituzten komunikazio-baliabideak erabili ahal izango dituzte lanean ari diren bitartean. Osoko 3 saio birtual egingo dira, eta izena emateko esteka bat jasoko duzue:\n\n- Hasiera-saioa: irailaren 18a, larunbata\n- Erdibideko saioa: urriaren 2a, larunbata\n- Itxiera-saioa: urriaren 16a, larunbata\n",
+    "A_WHEN_AND_WHERE": "HackaSom ekitaldia irailaren 18tik urriaren 16ra arte egingo da. Pandemiak eragin duen ziurgabetasuna dela eta, aurten formatu birtualean antolatu da. Taldeek nahi dituzten komunikazio-baliabideak erabili ahal izango dituzte lanean ari diren bitartean. Osoko 3 saio birtual egingo dira, eta izena emateko esteka bat jasoko duzu:\n\n- Hasiera-saioa: irailaren 18a, larunbata\n- Erdibideko saioa: urriaren 2a, larunbata\n- Itxiera-saioa: urriaren 16a, larunbata\n",
     "A_WHAT": "Taldeak elkarlanean arituko dira proiektu bat gauzatzeko. Proiektua aplikazio funtzional bat, prototipo edo maketa bat, edo, besterik gabe, beharren definizio bat edo ideia kontzeptual bat izan daiteke. Proiektua HackaSom ekitaldiaren amaieran aurkeztuko da eta zer jarraipen izan dezakeen planteatuko da.",
-    "A_WHY": "- Kooperatiba barruan komunitate teknologiko bat sortzea.\n- Parte-hartzaileen talentua eta gaitasun tekniko zein sormenezkoak sustatzea.\n- Som Energiaren misioa eta balioak indartzea.\n- Pertsonei ezagutzak eta gaitasun teknikoak bereganatzeko aukera ematen dien ikaskuntza-ingurune bat sortzea.\n- Gizarte-gaitasunen garapena, lankidetza, talde-lana eta networkinga sustatzen dituen ingurune bat.\n- Lan-ingurune anitz eta malgu bat sortzea, talde ahaldunduak bultzatuta.\n- Gozamena eta entretenimendua bultzatzen dituen jolas-ingurune bat.\n- Open source komunitatea eta software askea sustatzea.\n",
+    "A_WHY": "- Kooperatiba barruan komunitate teknologiko bat sortzea.\n- Parte-hartzaileen talentua eta gaitasun tekniko zein sormenezkoak sustatzea.\n- Som Energiaren misioa eta balioak indartzea.\n- Pertsonei ezagutzak eta gaitasun teknikoak bereganatzeko aukera ematen dien ikaskuntza-ingurune bat sortzea.\n- Gizarte-gaitasunen garapena, lankidetza, talde-lana eta networkinga sustatzen dituen ingurune bat.\n- Lan-ingurune anitz eta malgu bat sortzea, talde ahaldunduak bultzatuta.\n- Gozamena eta entretenimendua bultzatzen dituen jolas-ingurune bat.\n- Kode irekiko komunitatea eta software askea sustatzea.\n",
     "A_SINGLES": "Ez duzu talde batean izena eman behar. Behin betiko taldeak hasiera-saioan konfiguratuko dira. Egoeraren arabera, aurretik talderik ez duten pertsonek talde berriak sortuko dituzte edo lehendik dagoen talde batean sartuko dira.",
-    "A_SUPPORT": "Talde teknikoak osoko saioetan parte hartuko du eta lanordu batzuk gordeko dituzte zalantzei eta baliabide-eskaerei erantzuteko."
+    "A_SUPPORT": "Talde teknikoko kideek osoko saioetan parte hartuko dute eta lanordu batzuk gordeko dituzte zalantzei eta baliabide-eskaerei erantzuteko."
 }
