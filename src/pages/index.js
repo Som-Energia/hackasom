@@ -269,7 +269,7 @@ export default function Home() {
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-7xl mx-auto mb-4">
             <h2 className="font-montserrat">
-              <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
+              <span className="block text-base text-center text-white text-opacity-95 font-semibold tracking-wide uppercase">
                 { t("CALENDAR_TITLE") }
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
@@ -323,14 +323,14 @@ export default function Home() {
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
-              <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
+              <span className="block text-base text-center text-white text-opacity-95 font-semibold tracking-wide uppercase">
                 { t("TOPICS_TITLE") }
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
                 { t("TOPICS_SUBTITLE") }
               </span>
             </h2>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
+            <p className="mt-8 text-xl text-som-black leading-8">
               <MarkDown>
               { t("TOPICS_CONTENT") }
               </MarkDown>

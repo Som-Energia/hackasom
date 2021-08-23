@@ -29,7 +29,7 @@ const Calendar = props => {
             { t(item.date) }
           </div>
           <div className="flex flex-col justify-between">
-            <div className="mt-4">
+            <div className="mt-3">
               <p className="text-center text-2xl font-semibold text-som-black font-montserrat">
                 { t(item.content) }
               </p>
