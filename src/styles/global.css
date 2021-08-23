@@ -6,19 +6,19 @@
 /* TODO: turn this into a tailwind way */
 
 .markdown ul {
-  padding-left: 22pt;
+  padding-top: 0.75rem;
+  padding-left: 2.5rem;
   list-style: revert;
 }
-.markdown strong {
-  color: #74a938;
-  font-weight: normal;
+
+.markdown li {
+  margin-bottom: 0.35rem;
 }
+
 .markdown a {
-  padding: 4pt;
   border-radius: 4pt;
-  color: black;
 }
-.markdown a:hover {
-  color: black;
-  background-color: #E0E722; /* var(--som-yellow); */
+
+.markdown p {
+  line-height: 1.75rem;
 }

@@ -94,7 +94,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative pt-6 pb-16 sm:pb-24">
+        <div className="relative pt-6 pb-16 sm:pb-20">
           <Popover>
             {({ open }) => (
               <>
@@ -164,7 +164,7 @@ export default function Home() {
                         <div>
                           <img
                             className="h-8 w-auto"
-                            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                            src={"/cuca.svg"}
                             alt=""
                           />
                         </div>
@@ -202,13 +202,13 @@ export default function Home() {
             <div className="text-center">
               <h1 className="text-4xl tracking-wide font-bold text-som-black sm:text-5xl md:text-6xl font-montserrat">
                 <img
-                  style={ {margin:"auto"} }
+                  className="w-full lg:max-w-3xl m-auto px-3"
                   src={"/logo-hackasom-2021.png"}
                   alt={t("PAGE_TITLE")}
                   title={t("PAGE_TITLE")}
                 />
               </h1>
-              <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+              <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-0 md:text-xl md:max-w-3xl">
                 { t("EVENT_DATES") }
               </p>
               <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
