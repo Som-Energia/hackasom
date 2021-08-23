@@ -1,6 +1,7 @@
 import React from "react"
 import { navigation } from "libs/utils"
 import { useTranslation } from 'gatsby-plugin-react-i18next'
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 export default function Footer() {
   const { t } = useTranslation()
@@ -14,7 +15,11 @@ export default function Footer() {
           {navigation.main.map(item => (
             <div key={item.name} className="px-5 py-2">
               <a
-                href={item.href}
+                href="#"
+                onClick={event => {
+                  event.preventDefault()
+                  scrollTo(`#${item.href}`)
+                }}                
                 className="text-base font-medium text-gray-500 hover:text-som-black"
               >
                 { t(item.name) }
