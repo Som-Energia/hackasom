@@ -13,7 +13,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
-    // Required by gatsby-plugin-react-i18next to locate translations
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-source-filesystem`,

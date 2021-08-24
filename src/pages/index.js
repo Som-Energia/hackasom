@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import Head from 'next/head'
+import { Helmet } from "react-helmet"
 import Layout from "components/layout/Layout"
 
 import { useTranslation } from 'gatsby-plugin-react-i18next'
@@ -22,9 +22,9 @@ export default function Home() {
 
   return (
     <Layout>
-      <Head>
+      <Helmet>
         <title>HackaSom | Som Energia</title>
-      </Head>
+      </Helmet>
       <div className="relative bg-white overflow-hidden">
         <div
           className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
