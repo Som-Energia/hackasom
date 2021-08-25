@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 import React from "react"
 import { Disclosure } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/outline"
@@ -13,7 +12,7 @@ export default function Faqs({ faqs }) {
   const { t } = useTranslation()
 
   return (
-    <div className="">
+    <div>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
           <h2 className="text-center text-3xl font-bold text-som-black sm:text-4xl font-montserrat">
@@ -31,11 +30,9 @@ export default function Faqs({ faqs }) {
                   <>
                     <dt className="text-lg">
                       <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                        <span className="font-montserrat font-medium text-som-black">
-                          <MarkDown>
+                        <MarkDown className="font-montserrat font-medium text-som-black">
                           { t(faq.question) }
-                          </MarkDown>
-                        </span>
+                        </MarkDown>
                         <span className="ml-6 h-7 flex items-center">
                           <ChevronDownIcon
                             className={classNames(
@@ -48,11 +45,9 @@ export default function Faqs({ faqs }) {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base text-gray-500">
-                        <MarkDown>
-                        { t(faq.answer) }
-                        </MarkDown>
-                      </p>
+                      <MarkDown className="text-base text-gray-500">
+                      { t(faq.answer) }
+                      </MarkDown>
                     </Disclosure.Panel>
                   </>
                 )}

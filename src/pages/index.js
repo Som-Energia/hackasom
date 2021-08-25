@@ -257,11 +257,9 @@ export default function Home() {
               { t("HACKASOM_SUBTITLE") }
               </span>
             </h2>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
-              <MarkDown>
-              { t("HACKASOM_CONTENT") }
-              </MarkDown>
-            </p>
+            <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
+            { t("HACKASOM_CONTENT") }
+            </MarkDown>
           </div>
         </div>
       </section>
@@ -296,26 +294,18 @@ export default function Home() {
                 { t("DYNAMIC_SUBTITLE") }
               </span>
             </h2>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
-              <MarkDown>
+            <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
               { t("DYNAMIC_CONTENT_1") }
-              </MarkDown>
-            </p>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
-              <MarkDown>
+            </MarkDown>
+            <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
               { t("DYNAMIC_CONTENT_2") }
-              </MarkDown>
-            </p>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
-              <MarkDown>
+            </MarkDown>
+            <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
               { t("DYNAMIC_CONTENT_3") }
-              </MarkDown>
-            </p>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
-              <MarkDown>
+            </MarkDown>
+            <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
               { t("DYNAMIC_CONTENT_4") }
-              </MarkDown>
-            </p>
+            </MarkDown>
           </div>
         </div>
       </section>
@@ -334,11 +324,9 @@ export default function Home() {
                 { t("TOPICS_SUBTITLE") }
               </span>
             </h2>
-            <p className="mt-8 text-xl text-som-black leading-8">
-              <MarkDown>
-              { t("TOPICS_CONTENT") }
-              </MarkDown>
-            </p>
+            <MarkDown className="mt-8 text-xl text-som-black leading-8">
+            { t("TOPICS_CONTENT") }
+            </MarkDown>
           </div>
         </div>
       </section>
@@ -354,11 +342,9 @@ export default function Home() {
               { t("REGISTRATION_SUBTITLE") }
               </span>
             </h2>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
-              <MarkDown>
-              { t("REGISTRATION_CONTENT_NOT_YET") }
-              </MarkDown>
-            </p>
+            <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
+            { t("REGISTRATION_CONTENT_NOT_YET") }
+            </MarkDown>
           </div>
         </div>
       </section>

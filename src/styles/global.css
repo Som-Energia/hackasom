@@ -5,20 +5,16 @@
 
 /* TODO: turn this into a tailwind way */
 
-.markdown ul {
+ul {
   padding-top: 0.75rem;
   padding-left: 2.5rem;
   list-style: revert;
 }
 
-.markdown li {
+li {
   margin-bottom: 0.35rem;
 }
 
-.markdown a {
-  border-radius: 4pt;
-}
-
-.markdown p {
+p {
   line-height: 1.65em;
 }
