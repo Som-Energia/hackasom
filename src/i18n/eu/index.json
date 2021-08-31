@@ -24,6 +24,8 @@
     "REGISTRATION_MENU": "Izen-emateak",
     "REGISTRATION_TITLE": "Izena emateko formularioa",
     "REGISTRATION_SUBTITLE": "Izen-emateak",
+    "REGISTRATION_BUTTON": "Formulario de inscripción a la HackaSom",
+    "REGISTRATION_BUTTON_LINK": "https://forms.gle/n4r8TTB1ms6QvRPj9",
     "REGISTRATION_CONTENT_NOT_YET": "Izena emateko formularioa irailaren 1etik aurrera egongo da erabilgarri.",
     "REGISTRATION_CONTENT_CLOSED": "Jada ez dago izena emateko aukerarik.",
     "FAQS_MENU": "Ohiko galderak",

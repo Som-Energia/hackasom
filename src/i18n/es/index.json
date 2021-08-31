@@ -32,6 +32,8 @@
     "REGISTRATION_MENU": "Inscripciones",
     "REGISTRATION_TITLE": "Formulario de inscripción",
     "REGISTRATION_SUBTITLE": "Inscripciones",
+    "REGISTRATION_BUTTON": "Formulario de inscripción a la HackaSom",
+    "REGISTRATION_BUTTON_LINK": "https://forms.gle/n4r8TTB1ms6QvRPj9",
     "REGISTRATION_CONTENT_NOT_YET": "El formulario de inscripción estará disponible a partir del 1 de septiembre.",
     "REGISTRATION_CONTENT_CLOSED": "Las inscripciones ya están cerradas.",
     "FAQS_MENU": "FAQS",

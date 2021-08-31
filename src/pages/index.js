@@ -342,9 +342,23 @@ export default function Home() {
               { t("REGISTRATION_SUBTITLE") }
               </span>
             </h2>
-            <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
-            { t("REGISTRATION_CONTENT_NOT_YET") }
+
+            <MarkDown className="mt-8 text-xl text-gray-500 leading-8 text-center">
+            { t("REGISTRATION_BUTTON") }
             </MarkDown>
+
+            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-4">
+              <div className="rounded-md shadow">
+                <a
+                  href={ t("REGISTRATION_BUTTON_LINK") }
+                  target="_blank"
+                  rel="noopener"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-som-green hover:bg-som-black md:py-4 md:text-lg md:px-10"
+                >
+                  { t("REGISTER_BUTTON") }
+                </a>
+              </div>
+            </div>  
           </div>
         </div>
       </section>
