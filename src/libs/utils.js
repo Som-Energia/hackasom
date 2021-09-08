@@ -9,7 +9,7 @@ import {
 // Dummy translation marker.
 // For those string is done in runtime in the template
 // but used here to mark it for the text extraction tool
-const t = (x) => x;
+const t = x => x
 
 export const navigation = {
   main: [
@@ -17,7 +17,6 @@ export const navigation = {
     { name: t("CALENDAR_MENU"), href: "calendar" },
     { name: t("DYNAMIC_MENU"), href: "dinamica" },
     { name: t("TOPICS_MENU"), href: "tematica" },
-    { name: t("REGISTRATION_MENU"), href: "inscripcions" },
     { name: t("FAQS_MENU"), href: "faqs" },
   ],
   social: [
@@ -112,10 +111,9 @@ export const faqs = [
   "SINGLES",
   "SUPPORT",
   "RESOURCES",
-].map( (item) => {
+].map(item => {
   return {
     question: `Q_${item}`,
     answer: `A_${item}`,
   }
-});
-
+})

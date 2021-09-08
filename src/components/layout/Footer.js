@@ -1,6 +1,6 @@
 import React from "react"
 import { navigation } from "libs/utils"
-import { useTranslation } from 'gatsby-plugin-react-i18next'
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 export default function Footer() {
@@ -19,13 +19,29 @@ export default function Footer() {
                 onClick={event => {
                   event.preventDefault()
                   scrollTo(`#${item.href}`)
-                }}                
+                }}
                 className="text-base font-medium text-gray-500 hover:text-som-black"
               >
-                { t(item.name) }
+                {t(item.name)}
               </a>
             </div>
           ))}
+          <div className="px-5 py-2">
+            <a
+              href={t("AVIS_LEGAL_URL")}
+              className="text-base font-medium text-gray-500 hover:text-som-black"
+            >
+              {t("AVIS_LEGAL")}
+            </a>
+          </div>
+          <div className="px-5 py-2">
+            <a
+              href={t("PRIVACY_POLICY_URL")}
+              className="text-base font-medium text-gray-500 hover:text-som-black"
+            >
+              {t("PRIVACY_POLICY")}
+            </a>
+          </div>
         </nav>
         <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map(item => (

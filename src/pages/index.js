@@ -2,8 +2,8 @@ import React, { Fragment } from "react"
 import { Helmet } from "react-helmet"
 import Layout from "components/layout/Layout"
 
-import { useTranslation } from 'gatsby-plugin-react-i18next'
-import { graphql } from 'gatsby';
+import { useTranslation } from "gatsby-plugin-react-i18next"
+import { graphql } from "gatsby"
 import { Popover, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 
@@ -129,7 +129,7 @@ export default function Home() {
                     <div className="hidden md:flex md:space-x-10">
                       {navigation.main.map(item => (
                         <a
-                          key={ item.name }
+                          key={item.name}
                           href="#"
                           onClick={event => {
                             event.preventDefault()
@@ -137,7 +137,7 @@ export default function Home() {
                           }}
                           className="font-medium text-gray-600 hover:text-som-black"
                         >
-                          { t(item.name) }
+                          {t(item.name)}
                         </a>
                       ))}
                     </div>
@@ -182,7 +182,7 @@ export default function Home() {
                       <div className="px-2 pt-2 pb-3">
                         {navigation.main.map(item => (
                           <a
-                            key={ item.name }
+                            key={item.name}
                             href="#"
                             onClick={event => {
                               event.preventDefault()
@@ -190,7 +190,7 @@ export default function Home() {
                             }}
                             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-som-black hover:bg-gray-50"
                           >
-                            { t(item.name) }
+                            {t(item.name)}
                           </a>
                         ))}
                         <LanguageSelector />
@@ -213,7 +213,7 @@ export default function Home() {
                 />
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-0 md:text-xl md:max-w-3xl">
-                { t("EVENT_DATES") }
+                {t("EVENT_DATES")}
               </p>
               <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                 <div className="rounded-md shadow">
@@ -225,7 +225,7 @@ export default function Home() {
                     }}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-som-green hover:bg-som-black md:py-4 md:text-lg md:px-10"
                   >
-                    { t("REGISTER_BUTTON") }
+                    {t("REGISTER_BUTTON")}
                   </a>
                 </div>
                 <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
@@ -237,7 +237,7 @@ export default function Home() {
                     }}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-som-green bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                   >
-                    { t("MORE_INFO_BUTTON") }
+                    {t("MORE_INFO_BUTTON")}
                   </a>
                 </div>
               </div>
@@ -251,14 +251,14 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
-              { t("HACKASOM_TITLE") }
+                {t("HACKASOM_TITLE")}
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-              { t("HACKASOM_SUBTITLE") }
+                {t("HACKASOM_SUBTITLE")}
               </span>
             </h2>
             <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
-            { t("HACKASOM_CONTENT") }
+              {t("HACKASOM_CONTENT")}
             </MarkDown>
           </div>
         </div>
@@ -272,10 +272,10 @@ export default function Home() {
           <div className="text-lg max-w-7xl mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-white text-opacity-95 font-semibold tracking-wide uppercase">
-                { t("CALENDAR_TITLE") }
+                {t("CALENDAR_TITLE")}
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                { t("CALENDAR_SUBTITLE") }
+                {t("CALENDAR_SUBTITLE")}
               </span>
             </h2>
             <Calendar items={calendar} />
@@ -288,23 +288,23 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
-                { t("DYNAMIC_TITLE") }
+                {t("DYNAMIC_TITLE")}
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                { t("DYNAMIC_SUBTITLE") }
+                {t("DYNAMIC_SUBTITLE")}
               </span>
             </h2>
             <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
-              { t("DYNAMIC_CONTENT_1") }
+              {t("DYNAMIC_CONTENT_1")}
             </MarkDown>
             <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
-              { t("DYNAMIC_CONTENT_2") }
+              {t("DYNAMIC_CONTENT_2")}
             </MarkDown>
             <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
-              { t("DYNAMIC_CONTENT_3") }
+              {t("DYNAMIC_CONTENT_3")}
             </MarkDown>
             <MarkDown className="mt-8 text-xl text-gray-500 leading-8">
-              { t("DYNAMIC_CONTENT_4") }
+              {t("DYNAMIC_CONTENT_4")}
             </MarkDown>
           </div>
         </div>
@@ -318,14 +318,14 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-white text-opacity-95 font-semibold tracking-wide uppercase">
-                { t("TOPICS_TITLE") }
+                {t("TOPICS_TITLE")}
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-                { t("TOPICS_SUBTITLE") }
+                {t("TOPICS_SUBTITLE")}
               </span>
             </h2>
             <MarkDown className="mt-8 text-xl text-som-black leading-8">
-            { t("TOPICS_CONTENT") }
+              {t("TOPICS_CONTENT")}
             </MarkDown>
           </div>
         </div>
@@ -336,29 +336,16 @@ export default function Home() {
           <div className="text-lg max-w-prose mx-auto mb-4">
             <h2 className="font-montserrat">
               <span className="block text-base text-center text-som-green font-semibold tracking-wide uppercase">
-              { t("REGISTRATION_TITLE") }
+                {t("REGISTRATION_TITLE")}
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-wide text-som-black sm:text-4xl">
-              { t("REGISTRATION_SUBTITLE") }
+                {t("REGISTRATION_SUBTITLE")}
               </span>
             </h2>
 
             <MarkDown className="mt-8 text-xl text-gray-500 leading-8 text-center">
-            { t("REGISTRATION_BUTTON") }
+              {t("REGISTRATION_CONTENT_CLOSED")}
             </MarkDown>
-
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-4">
-              <div className="rounded-md shadow">
-                <a
-                  href={ t("REGISTRATION_BUTTON_LINK") }
-                  target="_blank"
-                  rel="noopener"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-som-green hover:bg-som-black md:py-4 md:text-lg md:px-10"
-                >
-                  { t("REGISTER_BUTTON") }
-                </a>
-              </div>
-            </div>  
           </div>
         </div>
       </section>
@@ -371,15 +358,17 @@ export default function Home() {
 }
 
 export const query = graphql`
-query($language: String!) {
-  locales: allLocale(filter: {ns: {in: ["index"]}, language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+  query($language: String!) {
+    locales: allLocale(
+      filter: { ns: { in: ["index"] }, language: { eq: $language } }
+    ) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
   }
-}
-`;
+`
