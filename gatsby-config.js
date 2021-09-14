@@ -17,49 +17,56 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-source-filesystem`,
-        options: {
+      options: {
         path: `${__dirname}/src/i18n`,
-        name: `locale`
-      }
+        name: `locale`,
+      },
     },
     {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [
-          `es`, `ca`, `eu`, //`gl`,
-        ],
+        languages: [`es`, `ca`, `eu`, `gl`],
         defaultLanguage: `es`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
         siteUrl: `https://example.com/`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
-            escapeValue: false // not needed for react as it escapes by default
+            escapeValue: false, // not needed for react as it escapes by default
           },
           keySeparator: false,
           nsSeparator: false,
-          debug: false, 
-          defaultNS: 'index',
+          debug: false,
+          defaultNS: "index",
           nonExplicitSupportedLngs: true,
           // Copied from OpenData
-          fallbackLng: 'es',
+          fallbackLng: "es",
           detection: {
-            order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain']
-          }
+            order: [
+              "querystring",
+              "cookie",
+              "localStorage",
+              "sessionStorage",
+              "navigator",
+              "htmlTag",
+              "path",
+              "subdomain",
+            ],
+          },
         },
         pages: [
           {
-            matchPath: '/:lang?/blog/:uid',
+            matchPath: "/:lang?/blog/:uid",
             getLanguageFromPath: true,
             //excludeLanguages: ['es']
           },
           {
-            matchPath: '/preview',
-            languages: ['es']
-          }
-        ]
-      }
-    }
+            matchPath: "/preview",
+            languages: ["es"],
+          },
+        ],
+      },
+    },
   ],
 }
