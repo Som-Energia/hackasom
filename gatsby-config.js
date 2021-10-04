@@ -18,6 +18,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/mds`,
+        name: `markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/i18n`,
         name: `locale`,
       },
@@ -28,8 +36,9 @@ module.exports = {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
         languages: [`es`, `ca`, `eu`, `gl`],
         defaultLanguage: `es`,
+        redirect: false,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://example.com/`,
+        siteUrl: `https://hackasom.somenergia.coop/`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
@@ -37,33 +46,18 @@ module.exports = {
           },
           keySeparator: false,
           nsSeparator: false,
-          debug: false,
-          defaultNS: "index",
-          nonExplicitSupportedLngs: true,
-          // Copied from OpenData
           fallbackLng: "es",
-          detection: {
-            order: [
-              "querystring",
-              "cookie",
-              "localStorage",
-              "sessionStorage",
-              "navigator",
-              "htmlTag",
-              "path",
-              "subdomain",
-            ],
-          },
         },
         pages: [
           {
-            matchPath: "/:lang?/blog/:uid",
+            matchPath: "/aviso-legal",
             getLanguageFromPath: true,
-            //excludeLanguages: ['es']
+            languages: ["es"],
           },
           {
-            matchPath: "/preview",
-            languages: ["es"],
+            matchPath: "/ca/avis-legal",
+            getLanguageFromPath: true,
+            languages: ["ca"],
           },
         ],
       },

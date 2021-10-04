@@ -65,7 +65,7 @@
   "A_RESOURCES": "Siempre que esté justificado, los equipos podrán pedir recursos al equipo técnico: listas de correo, espacios para repositorio, subdominios, información sobre API ya disponibles...",
   "END": "Marcador final",
   "AVIS_LEGAL": "Aviso legal",
-  "AVIS_LEGAL_URL": "https://www.somenergia.coop/es/aviso-legal/",
+  "AVIS_LEGAL_URL": "/aviso-legal/",
   "PRIVACY_POLICY": "Política de privacidad",
   "PRIVACY_POLICY_URL": "https://www.somenergia.coop/es/politica-de-privacidad/"
 }

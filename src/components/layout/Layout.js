@@ -5,7 +5,6 @@ import Footer from "./Footer"
 const Layout = ({ children }) => {
   return (
     <div className="font-roboto">
-      <Header />
       <main>{children}</main>
       <Footer />
     </div>

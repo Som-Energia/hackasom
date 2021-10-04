@@ -18,3 +18,15 @@ li {
 p {
   line-height: 1.65em;
 }
+
+.md-content a {
+  @apply text-som-dark-green;
+}
+
+.md-content p {
+  @apply mb-4;
+}
+
+.md-content h2 {
+  @apply mt-6 mb-4 block text-lg leading-8 font-bold tracking-wide text-som-black;
+}
